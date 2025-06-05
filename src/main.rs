@@ -117,12 +117,10 @@ impl JsonExplorer {
                     } else {
                         format!("{} Root", icon)
                     }
+                } else if self.show_node_types {
+                    format!("{} {} (object, {} items)", icon, key, obj.len())
                 } else {
-                    if self.show_node_types {
-                        format!("{} {} (object, {} items)", icon, key, obj.len())
-                    } else {
-                        format!("{} {}", icon, key)
-                    }
+                    format!("{} {}", icon, key)
                 };
 
                 let response = ui.selectable_label(false, display_text);
@@ -164,12 +162,10 @@ impl JsonExplorer {
                     } else {
                         format!("{} Root", icon)
                     }
+                } else if self.show_node_types {
+                    format!("{} {} (array, {} items)", icon, key, arr.len())
                 } else {
-                    if self.show_node_types {
-                        format!("{} {} (array, {} items)", icon, key, arr.len())
-                    } else {
-                        format!("{} {}", icon, key)
-                    }
+                    format!("{} {}", icon, key)
                 };
 
                 let response = ui.selectable_label(false, display_text);

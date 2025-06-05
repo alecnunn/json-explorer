@@ -8,7 +8,7 @@ authors = ["Alec Nunn <alec.nunn@gmail.com>"]
 eframe = "0.31"
 egui = "0.31"
 serde_json = "1.0"
-rfd = "0.12"
+rfd = "0.15"
 anyhow = "1.0"
 
 [profile.release]
@@ -19,4 +19,4 @@ panic = "abort"
 strip = true
 
 [target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3", features = ["winuser", "windef", "shellapi", "processthreadsapi", "wingdi", "errhandlingapi"] }
+winapi = { version = "0.3", features = ["winuser"] }
