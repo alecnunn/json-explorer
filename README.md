@@ -8,3 +8,7 @@ currently, really just to explore some ideas and tinker with egui.
 
 Be sure to have Rust installed per your system's guidance, then you should
 be able to simply run `cargo run --release` to build and run the app.
+
+## Screenshots
+
+![Screenshot of JSON Explorer reading No Man's Sky expedition configuration](./support/screenshot.png)
