@@ -22,8 +22,8 @@ impl JsonExplorer {
     fn new() -> Self {
         Self {
             selected_json: String::new(),
-            show_node_types: false,  // Default to showing types
-            show_node_values: false, // Default to showing values
+            show_node_types: false,  // Default to not showing types
+            show_node_values: false, // Default to not showing values
             ..Default::default()
         }
     }
